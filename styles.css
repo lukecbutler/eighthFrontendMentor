@@ -1,0 +1,57 @@
+/* Global Styling */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    font-family: 'Red Hat Display', serif;
+}
+
+/* Top logo styling */
+.flex-container-logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+
+/* Header Styling - avatars, main header, description, download & what is it buttons */
+
+.flex-container-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+
+}
+
+.header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Header styling */
+.flex-container-header h1{
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 110%;
+    margin-left: 120px;
+    margin-right: 120px;
+    text-align: center;
+}
+/* Header description styling */
+.flex-container-header p{
+    margin-left: 120px;
+    margin-right: 120px;
+    color: #87879D;
+    text-align: center;
+}
+
+
+.header-buttons-div{
+    display: flex;
+    flex-direction: row;
+}
