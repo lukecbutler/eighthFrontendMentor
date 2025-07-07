@@ -10,13 +10,15 @@ body{
     font-family: 'Red Hat Display', serif;
 }
 
+
+
 /* Top logo styling */
 .flex-container-logo{
     display: flex;
-    justify-content: center;
     padding-top: 80px;
+    min-width: 100vw;
+    justify-content: center;
 }
-
 
 /* Header Styling - avatars, main header, description, download & what is it buttons */
 
@@ -54,10 +56,24 @@ body{
 .header-buttons-div{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .header-buttons-div a{
     height: 55px;
     width: 195px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 3.5;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.header-download{
+    background-color: #4D96A9;
+}
+
+.header-what-is-it{
+    background-color: #855FB1;
 }
