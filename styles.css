@@ -50,8 +50,14 @@ body{
     text-align: center;
 }
 
-
+/* Header buttons styling */
 .header-buttons-div{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.header-buttons-div a{
+    height: 55px;
+    width: 195px;
 }
