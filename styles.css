@@ -10,13 +10,16 @@ body{
     font-family: 'Red Hat Display', serif;
 }
 
-
+.flex-container{
+    display: flex;
+    width: 100%;
+}
 
 /* Top logo styling */
 .flex-container-logo{
     display: flex;
     padding-top: 80px;
-    min-width: 100vw;
+    width: 100%;
     justify-content: center;
 }
 
@@ -26,7 +29,11 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 64px;
+}
 
+.flex-container-header img{
+    width: 395px;
+    height: 305px;
 }
 
 .header-text{
