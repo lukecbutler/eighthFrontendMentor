@@ -302,6 +302,11 @@ body{
 
     .main-content h2{
         width: 60%;
+        text-align: center;
+    }
+
+    .main-content p{
+        text-align: center;
     }
 
     /* Footer Styling */
@@ -309,6 +314,9 @@ body{
         flex-direction: column;
         height: 375px;
         padding: 0px;
+        background-image: url("assets/mobile/image-footer.jpg");
+        background-color: #4D96A9;
+        background-blend-mode: soft-light;
     }
 
     .footer-container h2{
