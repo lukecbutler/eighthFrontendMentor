@@ -22,12 +22,16 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 65px;
 }
+
 
 /* Header Content Styling */
 .header-content{
-    align-content: center;
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
 }
 
 .header-content h1, p{
@@ -36,13 +40,42 @@ body{
 
 .header-content h1{
     font-size: 64px;
+    line-height: 0.9;
 }
 
 .header-content p{
     font-size: 18px;
 }
 
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+.header-buttons a{
+    line-height: 3.2;
+}
+
+.header-buttons .download{
+    width: 195px;
+    height: 55px;
+    border-radius: 25px;
+    background-color: #4D96A9;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header-buttons .information{
+    width: 195px;
+    height: 55px;
+    border-radius: 25px;
+    background-color: #855FB1;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
 
 
 /* Faces Styling */
@@ -50,6 +83,7 @@ body{
     position: relative;
     right: 25px;
 }
+
 .faces-right{
     position: relative;
     left: 25px;
