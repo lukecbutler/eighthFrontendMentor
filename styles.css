@@ -26,7 +26,6 @@ body{
     margin-bottom: 55px;
 }
 
-
 /* Header Content Styling */
 .header-content{
     display: flex;
@@ -48,6 +47,18 @@ body{
     font-size: 18px;
 }
 
+.faces-left{
+    display: block;
+}
+
+.faces-right{
+    display: block;
+}
+
+.mobile-faces{
+    display: none;
+}
+
 /* Header Buttons Styling */
 .header-buttons{
     display: flex;
@@ -57,6 +68,7 @@ body{
 
 .header-buttons a{
     line-height: 3.2;
+    cursor: pointer;
 }
 
 .header-buttons .download{
@@ -79,17 +91,6 @@ body{
     text-decoration: none;
 }
 
-
-/* Faces Styling */
-.faces-left{
-    position: relative;
-    right: 25px;
-}
-
-.faces-right{
-    position: relative;
-    left: 25px;
-}
 
 /* Vertical Line & Cirlce Styling */
 
@@ -114,5 +115,184 @@ body{
     text-align: center;
     line-height: 3;
     color: #87879D;
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+/* Main Container styling */
+
+/* Main images styling */
+
+.main-container{
+    justify-items: center;
+}
+
+.main-images{
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
+}
+
+.main-images *{
+    width: 256px;
+    height: 256px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Main Content Styling */
+.main-content{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 40%;
+    justify-items: center;
+}
+
+.main-content h2{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+.main-content p{
+    width: 80%;
+}
+
+/* Circle-Line 2 Styling */
+.circle-line-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    top: 25px;
+}
+
+.vertical-line{
+    border-left: 1px solid #D1D1DF;
+    height: 80px;
+}
+
+.circle{
+    height: 55px;
+    width: 55px;
+    background-color: white;
+    border: 1px solid #D1D1DF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3.5;
+    color: #87879D;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+
+/* Footer Styling */
+.footer-container{
+    display: flex;
+    height: 300px;
+    width: auto;
+    background-image: url("assets/desktop/image-footer.jpg") ;
+    background-color: #4D96A9;
+    background-blend-mode: soft-light;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.footer-container *{
+    color: white;
+}
+
+.footer-container h2{
+    font-size: 40px;
+    width: 30%;
+}
+
+.footer-container p{
+    width: 25%;
+    text-align: start;
+}
+
+.footer-container a{
+    width: 195px;
+    height: 55px;
+    border-radius: 25px;
+    background-color: #855FB1;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 700px) {
+    
+    /* Faces portion */
+    /* Switch header picture of faces */
+    .faces-left{
+        display: none;
+    }
+
+    .faces-right{
+        display: none;
+    }
+
+    .mobile-faces{
+        display: flex;
+        justify-content: center;
+        margin-top: 64px;
+    }
+
+    .mobile-faces img{
+        width: 413px;
+        height: 140px;
+    }
+    
+    /* Header Container */
+
+    .header-container{
+        justify-content: center;
+    }
+
+    /* Header Content Styling */
+    .header-content{
+        width: 85%;
+        justify-content: center;
+    }
+
+    .header-content h1{
+        font-size: 40px;
+    }
+
+    .header-content p{
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .header-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header-buttons .download{
+        margin-bottom: 15px;
+    }
+
+
+
+
+
+
+
+
+    /* Main Images - 4 Pictures of people using the product */
+    .main-images{
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
 }
