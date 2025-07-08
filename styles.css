@@ -227,7 +227,7 @@ body{
     cursor: pointer;
 }
 
-
+/* Phone Styling */
 @media screen and (max-width: 700px) {
     
     /* Faces portion */
@@ -282,17 +282,50 @@ body{
         margin-bottom: 15px;
     }
 
-
-
-
-
-
-
-
+    /* Main Container Styling */
+    
     /* Main Images - 4 Pictures of people using the product */
     .main-images{
         flex-wrap: wrap;
-        flex-direction: column;
+    }
 
+    .main-images img{
+        width: 145px;
+        height: 145px;
+    }
+
+    /* Main Content */
+    .main-content{
+        width: 100%;
+    }
+
+    .main-content h2{
+        width: 60%;
+    }
+
+    /* Footer Styling */
+    .footer-container{
+        flex-direction: column;
+        height: 375px;
+        padding: 0px;
+    }
+
+    .footer-container h2{
+        width: 100%;
+        font-size: 32px;
+        text-align: center;
+        position: relative;
+        top: 20px;
+    }
+
+    .footer-container p{
+        width: 100%;
+        text-align: center;
+        width: 77%;
+    }
+
+    .footer-container a{
+        position: relative;
+        bottom: 25px;
     }
 }
