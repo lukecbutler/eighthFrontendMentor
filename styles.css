@@ -299,6 +299,7 @@ body{
     /* Main Content */
     .main-content{
         width: 100%;
+        align-items: center;
     }
 
     .main-content h2{
