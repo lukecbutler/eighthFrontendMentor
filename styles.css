@@ -24,6 +24,7 @@ body{
     justify-content: space-between;
     margin-top: 65px;
     margin-bottom: 55px;
+    max-width: 100%;
 }
 
 /* Header Content Styling */
@@ -151,15 +152,16 @@ body{
 .main-content h2{
     margin-top: 15px;
     margin-bottom: 30px;
-    margin-left: 600px;
-    margin-right: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
 }
 
 .main-content p{
-
     font-size: 20px;
-    margin-left: 420px;
-    margin-right: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 420px;
 }
 
 /* Circle-Line 2 Styling */
@@ -194,6 +196,7 @@ body{
 /* Footer Styling */
 .footer-container{
     display: flex;
+    min-height: 300px;
     height: 300px;
     width: auto;
     background-image: url("assets/desktop/image-footer.jpg") ;
@@ -364,3 +367,71 @@ body{
     }
 }
 
+/* Phone Styling */
+@media screen and (max-width: 1200px) and (min-width:701px){
+
+    /* Faces portion */
+    /* Switch header picture of faces */
+    .faces-left{
+        display: none;
+    }
+
+    .faces-right{
+        display: none;
+    }
+
+    .mobile-faces{
+        display: flex;
+        justify-content: center;
+        margin-top: 64px;
+    }
+
+    .mobile-faces img{
+        width: 80%;
+        height: auto;
+    }
+
+    /* Header Container */
+
+    .header-container{
+        justify-content: center;
+    }
+
+    /* Header Content Styling */
+    .header-content{
+        width: 85%;
+        justify-content: center;
+    }
+
+    .header-content h1{
+        font-size: 40px;
+    }
+
+    .header-content p{
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .main-images{
+        flex-wrap: wrap;
+    }
+
+    .main-images img{
+        width: 145px;
+        height: 145px;
+        margin-bottom: 20px;
+    }
+
+    /* Main Content */
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        justify-items: center;
+    }
+
+
+
+}
