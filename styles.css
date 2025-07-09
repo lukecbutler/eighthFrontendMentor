@@ -213,11 +213,15 @@ body{
 
 .footer-container h2{
     font-size: 40px;
-    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30%;
 }
 
 .footer-container p{
-    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25%;
     text-align: start;
 }
 
@@ -387,7 +391,7 @@ body{
     }
 
     .mobile-faces img{
-        width: 80%;
+        width: 100%;
         height: auto;
     }
 
@@ -404,15 +408,31 @@ body{
     }
 
     .header-content h1{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 250px;
         font-size: 40px;
+        font-weight: 800;
     }
 
     .header-content p{
         font-size: 16px;
         margin-top: 20px;
         margin-bottom: 20px;
+
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
     }
 
+    .header-buttons{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .information{
+        margin-left: 20px;
+    }
     .main-images{
         flex-wrap: wrap;
     }
@@ -432,6 +452,41 @@ body{
         justify-items: center;
     }
 
+    .main-content h2{
+        font-weight: 900;
+        font-size: 36px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 450px;
+    }
 
+    .main-content p{
+        width: 100%;
+    }
 
+    .footer-container{
+        flex-direction: column;
+        height: 320px;
+        padding: 0px;
+        background-image: url("assets/tablet/image-footer.jpg");
+    }
+
+    .footer-container h2{
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 75%;
+        font-weight: 800;
+    }
+
+    .footer-container p{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 75%;
+        text-align: center;
+    }
+
+    .footer-container a{
+        margin-bottom: 15px;
+    }
 }
